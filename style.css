@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #6499E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .studentForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    min-height: 60vh;
+    height: fit-content;
+    padding: 10px 0;
+    background:linear-gradient(to right,#8fd1f5,#005f92);
+    border-radius: 50px;
+    filter: drop-shadow(5px 5px rgb(96, 96, 236));
+ }
+
+  .label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input{
+    outline:none;
+    height:30px;
+    width: 50%;
+    border-radius: 20px;
+    padding: 5px;
+}
+.btn{
+    height: 40px;
+    width: 20%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #6499E9;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    transform: translateY(2px);
+    background: linear-gradient(to right,#139feb,#70cdff);
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background:linear-gradient(to right, #0b5780,#70cdff);
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.delete-btn,.edit-btn,.ok-btn{
+    padding: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #01388b;
+    transition: all 0.1s ease;
+}
+.delete-btn:hover,.edit-btn:hover,.ok-btn:hover{
+    transform: translateY(2px);
+    background: linear-gradient(to right,#1e9ce0,#44a3d6);
+}

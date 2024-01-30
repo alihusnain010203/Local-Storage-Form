@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <h1>Register Student</h1>
+    <form class="studentForm">
+        <label class="label" for="firstName">First Name:</label>
+        <input class="input" type="text" id="firstName" required placeholder="Enter Firstname">
+        <br>
+
+        <label class="label" for="lastName">Last Name:</label>
+        <input class="input" type="text" id="lastName" required placeholder="Enter Lastname">
+        <br>
+
+        <label class="label" for="email">Email:</label>
+        <input class="input" type="email" id="email" required placeholder="Enter Email">
+        <br>
+
+        <label class="label" for="degree">Select Degree:</label>
+        <select class="input" id="degree">
+            <option value="" disabled selected>Select Degree</option>
+            <option value="BSCS">BSCS</option>
+            <option value="BSIT">BSIT</option>
+            <option value="BSSE">BSSE</option>
+        </select>
+        <br>
+        <label class="label" for="semester">Semester:</label>
+        <input class="input" type="text" id="semester" required placeholder="Enter Semester">
+        <br>
+        <div id="books" style="display: none;">
+            <label>Books:</label>
+            <div id="bookList"></div>
+        </div>
+
+        <br>
+        <button class="btn" id="btn" type="button">Submit</button>
+    </form>
+
+    <table class="studentTable" id="studentTable">
+        <thead>
+            <tr>
+                <th> Name</th>
+                <th>Email</th>
+                <th>Roll No</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody class="tbody" id="tbody">
+
+        </tbody>
+    </table>
+    <script src="./index.js"></script>
+</body>
+
+</html>
